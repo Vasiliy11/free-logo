@@ -1,0 +1,92 @@
+.header {
+  font-family: 'Roboto', sans-serif;
+  &__top {
+    background-color: #303030;
+  }
+  &__contacts:after {
+    //Щоб флоат працював без косяків
+    content: '';
+    clear: both;
+    display: block;
+  }
+  &__info {
+    line-height: 45px;
+    color: #cbcacb;
+    align-items: center;
+    position: relative;
+  }
+  &__phone {
+    padding: 0 30px 0 20px;
+    &:before{
+        content: "\f095";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: #ffc222;
+    }
+  }
+  &__mail {
+    padding: 0 30px 0 25px;
+    &:before{
+        content: "\f003";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: #ffc222;
+    }
+  }
+  &__btn {
+    float: right;
+    color: #1b1b1b;
+    background-color: #ffc222;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 20px 14px 50px;
+    position: relative;
+    &:before{
+        content: "\f0b1";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 20px;
+        color: #1b1b1b;
+    }
+  }
+  &__bottom {
+    padding: 34px 0 23px;
+    &_wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__menu {
+    font-family: 'Roboto', sans-serif;
+    li + li {
+      margin-left: 5px;
+    }
+    li:last-child {
+      margin-right: -20px;
+    }
+    a {
+      color: #323232;
+      font-size: 16px;
+      line-height: 36px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      transition: all .3s;
+
+      &:hover {
+        border: 1px solid #ffc222;
+      }
+    }
+  }
+}
+
+.header__btn-menu{
+  display: none;
+  font-size: 28px;
+}
+
+#modal{
+    display: none;
+}
+

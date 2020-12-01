@@ -1,0 +1,29 @@
+.about{
+    background: url(../images/about-fon.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    padding: 25px 0 45px;
+    &__wrapper{
+        max-width: 550px;
+    }
+    &__title{
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        padding: 10px 0 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+    &__text{
+        color: #d3d2d2;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        margin-bottom: 30px;
+    }
+    &__button{
+        padding: 8px 26px;
+        &:after{
+            color: #000;
+        }
+    }
+}

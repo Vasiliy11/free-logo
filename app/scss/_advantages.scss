@@ -1,0 +1,45 @@
+.advantages{
+    background: url(../images/about-fon.jpg) center no-repeat;
+    background-size: cover;
+    padding: 55px 0 40px;
+    min-height: 285px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    &__item{
+        max-width: 360px;
+        width: 100%;
+        min-height: 200px;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+        &:before{
+            content: "\f00c";
+            line-height: 40px;
+            font-size: 14px;
+            font-family: 'icomoon' !important;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid #fcc222;
+        }
+    }
+    &__title{
+        margin-top: 65px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 15px;
+    }
+    &__text{
+        line-height: 24px;
+        color: #d3d2d2;
+        letter-spacing: 0.1px;
+    }
+}

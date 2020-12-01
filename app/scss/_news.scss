@@ -1,0 +1,113 @@
+.news{
+    padding: 50px 0 110px;
+    background-color: #f9f9f9;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__title-box{
+        max-width: 520px;
+        padding-left: 140px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: #ffc222;
+            left: 0;
+            top: 11px;
+        }
+    }
+    &__title{
+        color: #212020;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    &__text{
+        letter-spacing: 0.1px;
+        color: #5e5e5e;
+    }
+    &__btn{
+        color: #373636;
+        line-height: 24px;
+        padding: 5px 40px;
+        border: 3px solid #e6e6e6;
+        align-self: center;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider{
+        max-width: 555px;
+        width: 100%;
+        background-color: #fff;
+        padding: 60px 35px 45px 70px;
+        position: relative;
+        box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+        &:before{
+            content: "\f10e";
+            font-family: 'icomoon' !important;
+            position: absolute;
+            width: 65px;
+            height: 30px;
+            color: #fff;
+            font-size: 16px;
+            background-color: #ffc222;
+            top: 0;
+            left: 70px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    &__blog{
+        max-width: 260px;
+        width: 100%;
+    }
+    &__images{
+        position: relative;
+        margin-bottom: 12px;
+    }
+    &__date{
+        position: absolute;
+        width: 50px;
+        height: 55px;
+        color: #fff;
+        background-color: #ffc222;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 700;
+        top: 0;
+        left: 10px;
+    }
+    &__author{
+        margin-top: 30px;
+        color: #212020;
+    }
+    & .slick-prev,
+    & .slick-next{
+        bottom: -70px;
+        top: auto;
+        &.slick-disabled{
+            color: #dadada;
+            border-color: #dadada;
+            &:after{
+            color: #dadada;
+
+            }
+        }
+    }
+    & .slick-next{
+        right: 0;
+    }
+    & .slick-prev{
+        right: 60px;
+        left: auto;
+    }
+}

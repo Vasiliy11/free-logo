@@ -1,0 +1,87 @@
+.services{
+    padding: 50px 0 30px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__title-box{
+        max-width: 520px;
+        padding-left: 140px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: #ffc222;
+            left: 0;
+            top: 11px;
+        }
+    }
+    &__title{
+        color: #212020;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    &__text{
+        letter-spacing: 0.1px;
+    }
+    &__btn{
+        color: #373636;
+        line-height: 24px;
+        padding: 5px 40px;
+        border: 3px solid #e6e6e6;
+        align-self: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 360px;
+        min-height: 365px;
+        text-align: center;
+        padding: 30px 35px 40px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        background-color: rgb(249, 249, 249);
+        box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+        img{
+            object-fit: contain;
+            position: absolute;
+            bottom: 282px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-title{
+            margin-top: 80px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            padding-bottom: 24px;
+        }
+        &-text{
+            flex: 1 0 auto;
+        }
+        &-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-link{
+            color: #212020;
+            border-bottom: 1px solid #212020;
+        }
+        &-button{
+            padding: 8px 25px 8px 35px;
+            color: #212020;
+        }
+    }
+}
